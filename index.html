@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>German Vocab</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- <script src="superplaceholder.js"></script> -->
+</head>
+    <body>
+            <div class="toprow">
+                <button onclick="verbs()" class="verb" style="font-size: 16px; margin:0;font-family: 'Roboto', sans-serif;padding: 3px;"> VERBS</button>
+                    <button onclick="nouns()" class="noun" style="font-size: 16px;margin:0;font-family: 'Roboto', sans-serif;padding: 3px;"> NOUNS</button>
+                    <button onclick="adjectives()" class="adj" style="font-size: 16px;margin:0;font-family: 'Roboto', sans-serif;padding: 3px;"> ADJECTIVES</button>
+                    <button onclick="adverbs()" class="adv" style="font-size: 16px;margin:0;font-family: 'Roboto', sans-serif;padding: 3px;"> ADVERBS</button>
+                    <button onclick="other()" class="other" style="font-size: 16px;margin:0;font-family: 'Roboto', sans-serif;padding: 3px;">OTHER</button>
+                
+            </div>
+            <!-- <div class="autoclass" >
+                    <button class="chars" onclick="smalla()">&#0228</button>
+                    <button class="chars" onclick="smallo()">&#0246</button>
+                <button  class="chars" onclick="smallu()">&#0252</button>
+                <button class="chars" onclick="smallb()">&#0223</button> -->
+                <!-- <button onclick="removal()" class="clear" style="font-size: 13px;margin:0;font-family: 'Roboto', sans-serif;padding: 3px;">CLEAR</button> -->
+            <!-- </div> -->
+            <div style="width: 100wh;">
+            <div class="autoclass">
+                    <input id="autoid" type="text" placeholder="" autofocus spellcheck="false" >
+                    <img src="clear.svg" id="closer" alt="" onclick="removal()" >
+                </div>
+                <!-- <button class="chars" onclick="smalla()">&#0228</button>
+                        <button class="chars" onclick="smallo()">&#0246</button>
+                        <button  class="chars" onclick="smallu()">&#0252</button>
+                        <button class="chars" onclick="smallb()">&#0223</button> -->
+                    <!-- <img src="typing.svg" alt="" style="height: 30px; margin-right: 5px;position:inline-block;" > -->
+                    <!-- <img src="clear.svg" id="closer" alt="" onclick="removal()" > -->
+            
+        </div>
+            <div id="currentones"></div> 
+    
+        <div id="texts">
+                <div class="mouse_scroll" onclick="bottom()">
+                        <div>
+                            <span class="m_scroll_arrows unu"></span>
+                            <span class="m_scroll_arrows doi"></span>
+                            <span class="m_scroll_arrows trei"></span>
+                        </div>
+                    </div>
+        <!-- <div class="two">
+            <img src="down.svg" alt="" class="down" onclick="bottom()">
+        </div> -->
+        
+
+        <!-- Article 1 -->
+        <h1 style="font-size: 20px; text-align: center; margin-top: 0px;">           
+            <a class="title1" href="https://www.zeit.de/sport/2019-06/u21-deutschland-talente-europameisterschaft-finale" target="_blank"></a> 
+        </h1> 
+        <div class="two">
+            <img src="1.svg" alt="" class="icon" onclick="lang1()"> <!-- <img src="seventeen.png" alt="" class="icon"> -->
+        </div>
+        <div id="banner", onclick="o1()"></div>
+        <div id="wrapper" class="wrapperstyle"></div>
+
+        <!-- Article 2 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title2" href="https://www.zeit.de/wissen/umwelt/2019-07/klimawandel-klimaschutz-aufforstung-baeume-pflanzen-co2-emmissionen" target="_blank"></a> 
+        </h1>
+        <div class="two">
+                <!-- change image and langx() -->
+                <img src="2.svg" alt="" class="icon" onclick="lang2()"> <!-- <img src="seventeen.png" alt="" class="icon"> -->
+            </div>
+        <!-- change id AND onclick -->
+        <div id="banner2", onclick="o2()"></div> 
+         <!-- change id -->
+        <div id="wrapper2" class="wrapperstyle"></div> 
+
+        <!-- Article 3 -->
+        <h1 class="head">           
+                <!-- change class and href -->
+                <a class="title3" href="https://www.zeit.de/sport/2019-07/frauenfussball-wm-halbfinale-england-usa" target="_blank"></a> 
+            </h1>
+            <div class="two">
+                    <!-- change image and langx() -->
+                <img src="3.svg" alt="" class="icon" onclick="lang3()"> <!-- <img src="seventeen.png" alt="" class="icon"> -->
+            </div>
+            <!-- change id AND onclick -->
+            <div id="banner3", onclick="o3()"></div> 
+    
+            <!-- change id -->
+            <div id="wrapper3" class="wrapperstyle"></div> 
+
+        <!-- Article 4 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title4" href="https://www.zeit.de/wirtschaft/unternehmen/2019-07/brasilien-dammbruch-bergbaukonzern-vale-gerichtsurteil" target="_blank"></a> 
+        </h1>
+        <div class="two">
+                <!-- change image and langx() -->
+            <img src="4.svg" alt="" class="icon" onclick="lang4()"> <!-- <img src="seventeen.png" alt="" class="icon"> -->
+        </div>
+        <!-- change id AND onclick -->
+        <div id="banner4", onclick="o4()"></div> 
+
+        <!-- change id -->
+        <div id="wrapper4" class="wrapperstyle"></div> 
+
+         <!-- Article 5 -->
+         <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title5" href="https://www.zeit.de/wissen/2019-07/homoeopathie-kassenaerzte-leistungen-rueckerstattung-krankenkassen-andreas-gassen" target="_blank"></a> 
+        </h1>
+        <div class="two">
+                <!-- change image and langx() -->
+            <img src="5.svg" alt="" class="icon" onclick="lang5()"> <!-- <img src="seventeen.png" alt="" class="icon"> -->
+        </div>
+        <!-- change id AND onclick -->
+        <div id="banner5", onclick="o5()"></div> 
+
+        <!-- change id -->
+        <div id="wrapper5" class="wrapperstyle"></div> 
+
+        <!-- Article 6 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title6" href="https://www.zeit.de/gesellschaft/zeitgeschehen/2019-07/reichsbuerger-verdacht-andreas-stitzl-waffenverbot-biathlon" target="_blank"></a> 
+        </h1>
+        <div class="two">
+                <!-- change image and langx() -->
+            <img src="6.svg" alt="" class="icon" onclick="lang6()"> <!-- <img src="seventeen.png" alt="" class="icon"> -->
+        </div>
+        <!-- change id AND onclick -->
+        <div id="banner6", onclick="o6()"></div> 
+
+        <!-- change id -->
+        <div id="wrapper6" class="wrapperstyle"></div> 
+
+        <!-- Article 7 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title7" href="https://www.zeit.de/kultur/kunst/2019-07/prinz-von-preussen-hohenzollern-rueckforderung-kunst-kanzleramt" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change image and langx() -->
+        <img src="7.svg" alt="" class="icon" onclick="lang7()"> <!-- <img src="seventeen.png" alt="" class="icon"> -->
+        </div>
+        <!-- change id AND onclick -->
+        <div id="banner7", onclick="o7()"></div> 
+
+        <!-- change id -->
+        <div id="wrapper7" class="wrapperstyle"></div> 
+
+        <!-- Article 8 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title8" href="https://www.zeit.de/wirtschaft/2019-07/bertelsmann-stiftung-kliniken-krankenhaus-studie-schliessung" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change image and langx() -->
+        <img src="8.svg" alt="" class="icon" onclick="lang8()"> <!-- <img src="seventeen.png" alt="" class="icon"> -->
+        </div>
+        <!-- change id AND onclick -->
+        <div id="banner8", onclick="o8()"></div> 
+
+        <!-- change id -->
+        <div id="wrapper8" class="wrapperstyle"></div> 
+
+        <!-- Article 9 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title9" href="https://www.zeit.de/wirtschaft/2019-07/klimapolitik-co2-preis-wissenschaftlicher-beirat-energie-steuerreform-klimawandel" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change image and langx() -->
+        <img src="9.svg" alt="" class="icon" onclick="lang9()"> <!-- <img src="seventeen.png" alt="" class="icon"> -->
+        </div>
+        <!-- change id AND onclick -->
+        <div id="banner9", onclick="o9()"></div> 
+
+        <!-- change id -->
+        <div id="wrapper9" class="wrapperstyle"></div> 
+
+        <!-- Article 10 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title10" href="https://www.zeit.de/gesellschaft/zeitgeschehen/2019-07/japan-kyoto-animationsstudio-brand" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change image and langx() -->
+        <img src="10.svg" alt="" class="icon" onclick="lang10()"> <!-- <img src="seventeen.png" alt="" class="icon"> -->
+        </div>
+        <!-- change id AND onclick -->
+        <div id="banner10", onclick="o10()"></div> 
+
+        <!-- change id -->
+        <div id="wrapper10" class="wrapperstyle"></div> 
+
+        <!-- Article 11 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title11" href="https://www.zeit.de/mobilitaet/2019-07/dieselfahrverbote-baden-wuerttemberg-zwangsgeld-verwaltungsgericht" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change image and langx() -->
+        <img src="11.svg" alt="" class="icon" onclick="lang11()"> <!-- <img src="seventeen.png" alt="" class="icon"> -->
+        </div>
+        <!-- change id AND onclick -->
+        <div id="banner11", onclick="o11()"></div> 
+
+        <!-- change id -->
+        <div id="wrapper11" class="wrapperstyle"></div> 
+
+        <!-- Article 12 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title12" href="https://www.zeit.de/politik/deutschland/2019-07/grossbritannien-boris-johnson-sieg-ministerruecktritte" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="12.svg" alt="" class="icon" onclick="lang12()"> <img src="11.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick -->
+        <div id="banner12", onclick="o12()"></div>
+
+        <!-- change id -->
+        <div id="wrapper12" class="wrapperstyle"></div> 
+
+        <!-- Article 13 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title13" href="https://www.zeit.de/sport/2019-07/mikroplastik-kunstrasenplaetze-dfb-bestandsschutz" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="13.svg" alt="" class="icon" onclick="lang13()"> <img src="15.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner13", onclick="o13()"></div>
+
+        <!-- change id -->
+        <div id="wrapper13" class="wrapperstyle"></div> 
+
+        <!-- Article 14 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title14" href="https://www.zeit.de/gesellschaft/zeitgeschehen/2019-07/polizei-gewalt-waffen-schusswaffen-statistik" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="14.svg" alt="" class="icon" onclick="lang14()"> <img src="17.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner14", onclick="o14()"></div>
+
+        <!-- change id -->
+        <div id="wrapper14" class="wrapperstyle"></div> 
+
+        <!-- Article 15 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title15" href="https://www.zeit.de/wissen/umwelt/2019-07/nitrat-grundwasser-eu-kommission-deutschland" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="15.svg" alt="" class="icon" onclick="lang15()"> <img src="21.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner15", onclick="o15()"></div>
+
+        <!-- change id -->
+        <div id="wrapper15" class="wrapperstyle"></div> 
+
+        <!-- Article 16 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title16" href="https://www.zeit.de/digital/2019-07/apple-online-kartendienst-kamera-autos-strassen" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="16.svg" alt="" class="icon" onclick="lang16()"> <img src="13.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner16", onclick="o16()"></div>
+
+        <!-- change id -->
+        <div id="wrapper16" class="wrapperstyle"></div> 
+
+         <!-- Article 17 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title17" href="https://www.zeit.de/gesellschaft/zeitgeschehen/2019-07/kalifornien-schuesse-volksfest-gilroy" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="6.svg" alt="" class="icon" onclick="lang17()"> <img src="18.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner17", onclick="o17()"></div>
+
+        <!-- change id -->
+        <div id="wrapper17" class="wrapperstyle"></div>
+
+        <!-- Article 18 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title18" href="https://www.zeit.de/wirtschaft/2019-07/wohnungen-statistisches-bundesamt-deutschland-2018" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="18.svg" alt="" class="icon" onclick="lang18()"> <img src="19.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner18", onclick="o18()"></div>
+
+        <!-- change id -->
+        <div id="wrapper18" class="wrapperstyle"></div> 
+
+        <!-- Article 19 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title19" href="https://www.zeit.de/sport/2019-07/tour-de-france-19-etappe-abbruch-schnee-hagel" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="19.svg" alt="" class="icon" onclick="lang19()"> <img src="12.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner19", onclick="o19()"></div>
+        <!-- change id -->
+        <div id="wrapper19" class="wrapperstyle"></div>
+
+        <!-- Article 20 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title20" href="https://www.zeit.de/wissen/2019-07/deutscher-wetterdienst-hitzewelle-sommer-temperaturen-werte" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="20.svg" alt="" class="icon" onclick="lang20()"> <img src="8.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner20", onclick="o20()"></div>
+
+        <!-- change id -->
+        <div id="wrapper20" class="wrapperstyle"></div> 
+
+        <!-- Article 21 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title21" href="https://www.zeit.de/wirtschaft/2019-07/konjunktur-wirtschaft-eurozone-bip-inflation" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="21.svg" alt="" class="icon" onclick="lang21()"> <img src="21.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner21", onclick="o21()"></div>
+
+        <!-- change id -->
+        <div id="wrapper21" class="wrapperstyle"></div> 
+
+
+        <!-- Article 22 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title22" href="https://www.zeit.de/wissen/umwelt/2019-08/extremwetter-hitzewelle-hitze-klimawandel-forscher-wissenschaft" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="22.svg" alt="" class="icon" onclick="lang22()"> <img src="18.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner22", onclick="o22()"></div>
+
+        <!-- change id -->
+        <div id="wrapper22" class="wrapperstyle"></div>
+
+        <!-- Article 23 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title23" href="https://www.zeit.de/gesellschaft/zeitgeschehen/2019-08/polizeipraesenz-bundespolizei-sicherheit-bahnhoefe-zivilschutz-frankfurt-hauptbahnhof" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="23.svg" alt="" class="icon" onclick="lang23()"> <img src="15.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner23", onclick="o23()"></div>
+
+        <!-- change id -->
+        <div id="wrapper23" class="wrapperstyle"></div> 
+
+        <!-- Article 24 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title24" href="https://www.zeit.de/wirtschaft/2019-08/handelskonflikt-japan-suedkorea-weisse-liste-handelspartner" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="24.svg" alt="" class="icon" onclick="lang24()"> <img src="21.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner24", onclick="o24()"></div>
+
+        <!-- change id -->
+        <div id="wrapper24" class="wrapperstyle"></div> 
+
+        <!-- Article 25 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title25" href="https://www.zeit.de/gesellschaft/2019-08/waffenbesitz-neuseeland-rueckgabe-terroranschlag-moscheen" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="25.svg" alt="" class="icon" onclick="lang25()"> <img src="19.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner25", onclick="o25()"></div>
+
+        <!-- change id -->
+        <div id="wrapper25" class="wrapperstyle"></div> 
+
+        <!-- Article 26 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title26" href="https://www.zeit.de/politik/2019-08/frankreich-amazon-digitalsteuer-preise" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="26.svg" alt="" class="icon" onclick="lang26()"> <img src="18.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner26", onclick="o26()"></div>
+
+        <!-- change id -->
+        <div id="wrapper26" class="wrapperstyle"></div> 
+
+        <!-- Article 27 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title27" href="https://www.zeit.de/digital/internet/2019-09/steuerstreit-google-strafzahlung-frankreich-vergleich-einigung" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="27.svg" alt="" class="icon" onclick="lang27()"> <img src="12.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner27", onclick="o27()"></div>
+
+        <!-- change id -->
+        <div id="wrapper27" class="wrapperstyle"></div>
+
+        <!-- Article 28 -->
+        <h1 class="head">           
+            <!-- change class and href -->
+            <a class="title28" href="https://www.zeit.de/wirtschaft/2019-08/konjunktur-rezession-bundeskanzleramt-bruttoinlandsprodukt-gesunken" target="_blank"></a> 
+        </h1>
+        <div class="two">
+            <!-- change BOTH images and langx() -->
+        <img src="28.svg" alt="" class="icon" onclick="lang28()"> <img src="17.png" alt="" class="icon">
+        </div>
+        <!-- change id AND onclick and image-->
+        <div id="banner28", onclick="o28()"></div>
+
+        <!-- change id -->
+        <div id="wrapper28" class="wrapperstyle"></div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; font-size: 8px;" id="bottom">Icons made by <a href="https://www.flaticon.com/authors/zlatko-najdenovski" title="Zlatko Najdenovski">Zlatko Najdenovski</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"             title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div style="text-align: center; font-size: 8px;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div style="text-align: center; font-size: 8px;">Icons made by <a href="https://www.flaticon.com/authors/lucy-g" title="Lucy G">Lucy G</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div style="text-align: center; font-size: 8px;">Icons made by <a href="https://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </body>
+<script src="app.js"></script>
+</html>
+

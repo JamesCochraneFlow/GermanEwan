@@ -1,0 +1,1002 @@
+
+a:link {color: black; background-color: transparent; text-decoration: none;}
+a:visited{color: black;}
+.head {font-size: 20px; text-align: center; margin-top: 40px;
+}
+
+
+
+input[type=text]{
+  text-align: left;
+  border:none;
+  background-color: transparent;
+  font-size: 25px;
+  position: relative;
+  /* top: 18%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+  font-weight: 700;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+::placeholder{
+  color: black;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+
+input:focus{
+  outline: none;
+}
+
+.autoclass{
+  width: 357px;
+  height: 30px;
+  margin:auto;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start arrows */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 100px;
+  margin-top: 20px;
+  margin-bottom: -30px;
+}
+
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 0 0 3px 4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+  
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .2s;
+  animation-direction: alternate;
+  
+  margin-top: -6px;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  
+  animation-delay: .3s;
+  animation-direction: alternate;
+  
+  
+  margin-top: -6px;
+}
+
+
+
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+/* end arrows */
+
+
+.toprow{
+  text-align: center;
+  width: 100wh;
+  padding-top: 10px;
+}
+
+#autoid{
+  float: left;
+  width: 90%;
+}
+
+#closer{
+  height:30px;
+  float:right;
+}
+
+#currentones{
+  overflow: hidden;
+  height: auto;
+  /* text-align:center; */
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+body{
+padding: 0;
+margin: 0;
+background-color: rgb(0, 125, 255, 0.1);
+font-family: 'Roboto', sans-serif;
+}
+
+.two{
+  width: 100%;
+  text-align: center;
+}
+
+.down{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  height: 30px;
+}
+
+.icon{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  height: 50px;
+}
+
+.wrapperstyle{
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  /* -webkit-transition:height 0.2s ;
+   -moz-transition:height 0.2s ;
+   -o-transition: height 0.2s; */
+  }
+.verb{
+font-size: 20px; 
+border-bottom-width:4px;  
+padding-left: 10px;
+border-bottom-style: solid ; 
+border-bottom-color:rgb(0, 0, 0);
+border-left-style: none;
+border-top-style: none;
+border-right-style: none;
+margin:5px;
+background: transparent;
+}
+
+.verb:focus{
+font-weight: bold;
+outline: none;
+}
+
+.noun{
+font-size: 20px; 
+border-bottom-width:4px;  
+padding-left: 10px; 
+border-bottom-style: solid ; 
+border-bottom-color:rgba(0, 125, 255, 1);
+border-left-style: none;
+border-top-style: none; 
+border-right-style: none; 
+margin:5px; 
+background: transparent;
+}
+
+.noun:focus{
+  outline: none;
+font-weight: bold;
+}
+
+.adj{
+font-size: 20px;
+border-bottom-width:4px;  
+padding-left: 10px; 
+border-bottom-style: solid ; 
+border-bottom-color:rgba(0, 125, 255, 0.75);
+border-left-style: none;
+border-top-style: none; 
+border-right-style: none; 
+margin:5px; 
+background: transparent;
+}
+
+.adj:focus{
+font-weight: bold; 
+outline: none;
+}
+
+.adv{
+font-size: 20px; 
+border-bottom-width:4px;  
+padding-left: 10px; 
+border-bottom-style: solid ; 
+border-bottom-color:rgba(0, 125, 255, 0.5);
+border-left-style: none;
+border-top-style: none; 
+border-right-style: none; 
+margin:5px; 
+background: transparent;
+}
+
+.adv:focus{
+font-weight: bold;
+outline: none;
+}
+
+.other{
+font-size: 20px; 
+border-bottom-width:4px;  
+padding-left: 10px; 
+border-bottom-style: solid ; 
+border-bottom-color:rgba(0, 125, 255, 0.25);
+border-left-style: none;
+border-top-style: none; 
+border-right-style: none; 
+margin:5px; 
+background: transparent;
+}
+
+.other:focus{
+font-weight: bold;
+outline: none;
+}
+
+/* article 1 */
+.title1:after {content:"Das Land der Talente";}
+.title1:hover:after{content:"The country of talent";}
+
+#banner{
+width: 100wh;
+height: 29px;
+background-image: linear-gradient(
+  90deg, 
+  black,
+  rgb(0, 0, 0) 29%,
+  rgba(0, 125, 255) 29%,
+  rgba(0, 125, 255) 63%,
+  rgba(0, 125, 255, 0.75) 63%,
+  rgba(0, 125, 255, 0.75) 75%,
+  rgba(0, 125, 255, 0.5) 75%,
+  rgba(0, 125, 255, 0.5)  92%,
+  rgba(0, 125, 255, 0.25) 92%) ;
+padding: 0;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+/* end article 1 */
+
+
+/* article 2 */
+.title2:after {content:"B\00e4 ume pflanzen gegen den Klimawandel";}
+.title2:hover:after{content:"Planting trees against climate-change";}
+
+
+#banner2{
+width: 100wh;
+height: 23px;
+background-image: linear-gradient(
+  90deg, 
+  black,
+  black 26%,
+  rgb(0, 125, 255) 26%,
+  rgb(0, 125, 255)45%,
+  rgb(0, 125, 255, 0.75) 45%,
+  rgb(0, 125, 255, 0.75) 66%,
+  rgb(0, 125, 255, 0.5) 66%,
+  rgb(0, 125, 255, 0.5) 85%,
+  rgb(0, 125, 255, 0.25) 85%) ;
+padding: 0;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+/* end article 2 */
+
+
+
+/* article 3 */
+.title3:after {content:"USA erreichen als erstes Team das Finale";}
+.title3:hover:after{content:"USA is the first team to reach the final";}
+
+
+#banner3{
+width: 100wh;
+height: 18px;
+background-image: linear-gradient(
+  90deg, 
+  black,
+  black 25%,
+  rgb(0, 125, 255) 25%,
+  rgb(0, 125, 255) 50%,
+  rgb(0, 125, 255, 0.75) 50%,
+rgb(0, 125, 255, 0.75) 84%,
+rgb(0, 125, 255, 0.5) 84%,
+rgb(0, 125, 255, 0.5) 86%,
+rgb(0, 125, 255, 0.25) 86%) ;
+padding: 0;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+
+
+/* article 4 */
+.title4:after {content:"Bergbaukonzern muss f\00fc r Sch\00e4 den von Dammbruch aufkommen";}
+.title4:hover:after{content:"Mining companies must be responsible for the damage from the dam break";}
+
+#banner4{
+width: 100wh;
+height: 19px;
+background-image: linear-gradient(
+    90deg, 
+  black,
+  black 24%,
+  rgb(0, 125, 255) 24%,
+  rgb(0, 125, 255) 83%,
+  rgb(0, 125, 255, 0.75) 83%,
+  rgb(0, 125, 255, 0.75) 85%,
+  rgb(0, 125, 255, 0.5) 85%,
+  rgb(0, 125, 255, 0.5)90%,
+  rgb(0, 125, 255, 0.25) 90%) ;
+padding: 0;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+
+/* article 5 */
+.title5:after {content:"Kassen\00e4 rzte kritisieren Finanzierung von Alternativmedizin";}
+.title5:hover:after{content:"GPs criticize financing of alternative medicine";}
+
+#banner5{
+width: 100wh;
+height: 24px;
+background-image: linear-gradient(
+  90deg, 
+  black,
+  black 16%,
+  rgb(0, 125, 255) 16%,
+  rgb(0, 125, 255) 68%,
+  rgb(0, 125, 255, 0.75) 68%,
+  rgb(0, 125, 255, 0.75) 88%,
+  rgb(0, 125, 255, 0.5) 88%,
+  rgb(0, 125, 255, 0.5) 94%,
+  rgb(0, 125, 255, 0.25)94%) ;
+padding: 0;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+
+  /* article 6*/
+.title6:after {content:"Gericht best\00e4 tigt Waffenverbot f\00fc r Ex-Biathlet Andreas Stitzl";}
+.title6:hover:after{content:"Court confirms weapon ban for ex-biathlete Andreas Stitzl";}
+
+#banner6{
+width: 100wh;
+height: 14px;
+background-image: linear-gradient(
+  90deg, 
+  black,
+  black 28%,
+  rgb(0, 125, 255) 28%,
+  rgb(0, 125, 255) 78%,
+  rgb(0, 125, 255, 0.75) 78%,
+  rgb(0, 125, 255, 0.75) 92%,
+  rgb(0, 125, 255, 0.5) 92%,
+  rgb(0, 125, 255, 0.5) 95%,
+  rgb(0, 125, 255, 0.25) 95%) ;
+padding: 0;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+
+    /* article 7*/
+.title7:after {content:"Hohenzollern erheben Anspruch auf Tausende Kunstwerke";}
+.title7:hover:after{content:"Hohenzollern makes a claim for thousands of works of art";}
+
+#banner7{
+width: 100wh;
+height: 24px;
+background-image: linear-gradient(
+  90deg, 
+  black,
+  black 25%,
+  rgb(0, 125, 255) 25%,
+  rgb(0, 125, 255) 68%,
+  rgb(0, 125, 255, 0.75) 68%,
+  rgb(0, 125, 255, 0.75) 84%,
+  rgb(0, 125, 255, 0.5) 84%,
+  rgb(0, 125, 255, 0.5) 94%,
+  rgb(0, 125, 255, 0.25) 94%) ;
+padding: 0;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+/* article 8*/
+.title8:after {content:"Experten fordern Schlie\00df ung zahlreicher Krankenh\00e4 user";}
+.title8:hover:after{content:"Experts demand the closure of many hospitals";}
+
+#banner8{
+width: 100wh;
+height: 13px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 33%,
+    rgb(0, 125, 255) 33%,
+    rgb(0, 125, 255) 77%,
+    rgb(0, 125, 255, 0.75) 77%,
+    rgb(0, 125, 255, 0.75) 91%,
+    rgb(0, 125, 255, 0.5) 91%,
+    rgb(0, 125, 255, 0.5) 94%,
+    rgb(0, 125, 255, 0.25) 94%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 9*/
+.title9:after {content:"Beraterstab im Wirtschaftsministerium empfiehlt CO2-Preis";}
+.title9:hover:after{content:"Team of advisors from the economics ministry suggests CO2 prices";}
+
+#banner9{
+width: 100wh;
+height: 29px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 31%,
+    rgb(0, 125, 255) 31%,
+    rgb(0, 125, 255) 73%,
+    rgb(0, 125, 255, 0.75) 73%,
+    rgb(0, 125, 255, 0.75) 81%,
+    rgb(0, 125, 255, 0.5) 81%,
+    rgb(0, 125, 255, 0.5) 88%,
+    rgb(0, 125, 255, 0.25) 88%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 10*/
+.title10:after {content:"Tote nach mutma\00df lichem Brandanschlag in Kyoto";}
+.title10:hover:after{content:"Deaths following suspected arson attack in Kyoto";}
+
+#banner10{
+width: 100wh;
+height: 12px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 12%,
+    rgb(0, 125, 255) 12%,
+    rgb(0, 125, 255) 57%,
+    rgb(0, 125, 255, 0.75) 57%,
+    rgb(0, 125, 255, 0.75) 69%,
+    rgb(0, 125, 255, 0.5) 69%,
+    rgb(0, 125, 255, 0.5) 81%,
+    rgb(0, 125, 255, 0.25) 81%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 11*/
+.title11:after {content:"Zwangsgeld wegen Dieselabgasen gegen Baden-W\00fc rttemberg";}
+.title11:hover:after{content:"Penalty payment against Baden-W\00fc rttemberg due to diesel exhaust fumes";}
+
+#banner11{
+width: 100wh;
+height: 29px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 21%,
+    rgb(0, 125, 255) 21%,
+    rgb(0, 125, 255) 66%,
+    rgb(0, 125, 255, 0.75) 66%,
+    rgb(0, 125, 255, 0.75) 83%,
+    rgb(0, 125, 255, 0.5) 83%,
+    rgb(0, 125, 255, 0.5) 86%,
+    rgb(0, 125, 255, 0.25) 86%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 11*/
+.title12:after {content:"Minister wollen aus Protest gegen Boris Johnson zur\00fc cktreten";}
+.title12:hover:after{content:"Minister wants to step back from protest against Boris Johnson";}
+
+#banner12{
+width: 100wh;
+height: 13px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 42%,
+    rgb(0, 125, 255) 42%,
+    rgb(0, 125, 255) 88%,
+    rgb(0, 125, 255, 0.75) 88%,
+    rgb(0, 125, 255, 0.75) 95%,
+    rgb(0, 125, 255, 0.5) 95%,
+    rgb(0, 125, 255, 0.5) 95%,
+    rgb(0, 125, 255, 0.25) 95%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 13*/
+.title13:after {content:"DFB fordert Bestandsschutz f\00fc r Kunstrasenpl\00e4 tze";}
+.title13:hover:after{content:"DFB demands grandfather clause for artificial grass pitches";}
+
+#banner13{
+width: 100wh;
+height: 22px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 25%,
+    rgb(0, 125, 255) 25%,
+    rgb(0, 125, 255) 62%,
+    rgb(0, 125, 255, 0.75) 62%,
+    rgb(0, 125, 255, 0.75) 85%,
+    rgb(0, 125, 255, 0.5) 85%,
+    rgb(0, 125, 255, 0.5) 94%,
+    rgb(0, 125, 255, 0.25) 94%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 14*/
+.title14:after {content:"Polizei schoss 2018 auf weniger Menschen als im Vorjahr";}
+.title14:hover:after{content:"Police shot fewer people in 2018 than in the previous year";}
+
+#banner14{
+width: 100wh;
+height: 16px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 31%,
+    rgb(0, 125, 255) 31%,
+    rgb(0, 125, 255) 62%,
+    rgb(0, 125, 255, 0.75) 62%,
+    rgb(0, 125, 255, 0.75) 77%,
+    rgb(0, 125, 255, 0.5) 77%,
+    rgb(0, 125, 255, 0.5) 92%,
+    rgb(0, 125, 255, 0.25) 92%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+/* article 15*/
+.title15:after {content:"EU mahnt Deutschland wegen Nitratbelastung";}
+.title15:hover:after{content:"The EU admonsishes Germany for nitate-pollution";}
+
+#banner15{
+width: 100wh;
+height: 19px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 37%,
+    rgb(0, 125, 255) 37%,
+    rgb(0, 125, 255) 85%,
+    rgb(0, 125, 255, 0.75) 85%,
+    rgb(0, 125, 255, 0.75) 87%,
+    rgb(0, 125, 255, 0.5) 87%,
+    rgb(0, 125, 255, 0.5) 92%,
+    rgb(0, 125, 255, 0.25) 92%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 16*/
+.title16:after {content:"Apple schickt Kamerafahrzeuge auf deutsche Stra\00df en";}
+.title16:hover:after{content:"Apple dispatches camera-vehicles onto the streets of Germany";}
+
+#banner16{
+width: 100wh;
+height: 11px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 40%,
+    rgb(0, 125, 255) 40%,
+    rgb(0, 125, 255) 76%,
+    rgb(0, 125, 255, 0.75) 76%,
+    rgb(0, 125, 255, 0.75) 80%,
+    rgb(0, 125, 255, 0.5) 80%,
+    rgb(0, 125, 255, 0.5) 93%,
+    rgb(0, 125, 255, 0.25) 93%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 17*/
+.title17:after {content:"Berichte \00fc ber Tote und Verletzte nach Sch\00fc ssen auf Volksfest";}
+.title17:hover:after{content:"Reports of deaths and injuries after shots at public festival";}
+
+#banner17{
+width: 100wh;
+height: 12px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 33%,
+    rgb(0, 125, 255) 33%,
+    rgb(0, 125, 255) 83%,
+    rgb(0, 125, 255, 0.75) 83%,
+    rgb(0, 125, 255, 0.75) 93%,
+    rgb(0, 125, 255, 0.5) 93%,
+    rgb(0, 125, 255, 0.5) 93%,
+    rgb(0, 125, 255, 0.25) 93%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 18*/
+.title18:after {content:"Mehr Wohnungen, mehr Quadratmeter pro Einwohner";}
+.title18:hover:after{content:"The more apartments, the more square meteres per inhabitant";}
+
+#banner18{
+width: 100wh;
+height: 6px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 16%,
+    rgb(0, 125, 255) 16%,
+    rgb(0, 125, 255) 74%,
+    rgb(0, 125, 255, 0.75) 74%,
+    rgb(0, 125, 255, 0.75) 74%,
+    rgb(0, 125, 255, 0.5) 74%,
+    rgb(0, 125, 255, 0.5) 74%,
+    rgb(0, 125, 255, 0.25) 74%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 19*/
+.title19:after {content:"Schnee und Schlamm f\00fc hren zu Etappenabbruch";}
+.title19:hover:after{content:"Snow and mud lead to stoppage of stage";}
+
+#banner19{
+width: 100wh;
+height: 15px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 26%,
+    rgb(0, 125, 255) 26%,
+    rgb(0, 125, 255) 89%,
+    rgb(0, 125, 255, 0.75) 89%,
+    rgb(0, 125, 255, 0.75) 89%,
+    rgb(0, 125, 255, 0.5) 89%,
+    rgb(0, 125, 255, 0.5) 95%,
+    rgb(0, 125, 255, 0.25) 95%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 20*/
+.title20:after {content:"Der hei\00df e Juli war kein Rekordmonat";}
+.title20:hover:after{content:"Hot July wasn't a record breaking month";}
+/* change banner */
+#banner20{
+width: 100wh;
+height: 7px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 50%,
+    rgb(0, 125, 255) 50%,
+    rgb(0, 125, 255) 78%,
+    rgb(0, 125, 255, 0.75) 78%,
+    rgb(0, 125, 255, 0.75) 92%,
+    rgb(0, 125, 255, 0.5) 92%,
+    rgb(0, 125, 255, 0.5) 99%,
+    rgb(0, 125, 255, 0.25) 99%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 21*/
+.title21:after {content:"Im Euroraum verlangsamt sich das Wachstum";}
+.title21:hover:after{content:"Growth in the euro area is slowing down";}
+/* change banner */
+#banner21{
+width: 100wh;
+height: 11px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 57%,
+    rgb(0, 125, 255) 57%,
+    rgb(0, 125, 255) 95%,
+    rgb(0, 125, 255, 0.75) 95%,
+    rgb(0, 125, 255, 0.75) 99%,
+    rgb(0, 125, 255, 0.5) 99%,
+    rgb(0, 125, 255, 0.5) 99%,
+    rgb(0, 125, 255, 0.25) 99%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 22*/
+.title22:after {content:"Hitzewellen wie im Juli durch Klimawandel wahrscheinlicher";}
+.title22:hover:after{content:"Heat waves in Juli are more likely because of climate change";}
+/* change banner */
+#banner22{
+width: 100wh;
+height: 11px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 38%,
+    rgb(0, 125, 255) 38%,
+    rgb(0, 125, 255) 61%,
+    rgb(0, 125, 255, 0.75) 61%,
+    rgb(0, 125, 255, 0.75) 89%,
+    rgb(0, 125, 255, 0.5) 89%,
+    rgb(0, 125, 255, 0.5) 98%,
+    rgb(0, 125, 255, 0.25) 98%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 23*/
+.title23:after {content:"Bundespolizei will mehr Beamte an Bahnh\00f6 fen einsetzen";}
+.title23:hover:after{content:"Federal police want to deploy more officers at stations";}
+/* change banner */
+#banner23{
+width: 100wh;
+height: 9px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 50%,
+    rgb(0, 125, 255) 50%,
+    rgb(0, 125, 255) 72%,
+    rgb(0, 125, 255, 0.75) 72%,
+    rgb(0, 125, 255, 0.75) 83%,
+    rgb(0, 125, 255, 0.5) 83%,
+    rgb(0, 125, 255, 0.5) 94%,
+    rgb(0, 125, 255, 0.25) 94%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 23*/
+.title24:after {content:"Handelsstreit zwischen Japan und S\00fc dkorea versch\00e4 rft sich";}
+.title24:hover:after{content:"Trade dispute between Japan and South Korea intensifies";}
+/* change banner */
+#banner24{
+width: 100wh;
+height: 14px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 41%,
+    rgb(0, 125, 255) 41%,
+    rgb(0, 125, 255) 72%,
+    rgb(0, 125, 255, 0.75) 72%,
+    rgb(0, 125, 255, 0.75) 78%,
+    rgb(0, 125, 255, 0.5) 78%,
+    rgb(0, 125, 255, 0.5) 91%,
+    rgb(0, 125, 255, 0.25) 91%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 23*/
+.title25:after {content:"Neuseel\00e4 nder geben 9.000 Waffen zur\00fc ck";}
+.title25:hover:after{content:"New Zealanders give back 9,000 weapons";}
+/* change banner */
+#banner25{
+width: 100wh;
+height: 7px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 40%,
+    rgb(0, 125, 255) 40%,
+    rgb(0, 125, 255) 93%,
+    rgb(0, 125, 255, 0.75) 93%,
+    rgb(0, 125, 255, 0.75) 93%,
+    rgb(0, 125, 255, 0.5) 93%,
+    rgb(0, 125, 255, 0.5) 99%,
+    rgb(0, 125, 255, 0.25) 99%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 23*/
+.title26:after {content:"Amazon gibt Kosten franz\00f6 sischer Digitalsteuer an Kunden weiter";}
+.title26:hover:after{content:"Amazon passes on the costs of French digital tax to its customers";}
+/* change banner */
+#banner26{
+width: 100wh;
+height: 16px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 50%,
+    rgb(0, 125, 255) 50%,
+    rgb(0, 125, 255) 81%,
+    rgb(0, 125, 255, 0.75) 81%,
+    rgb(0, 125, 255, 0.75) 96%,
+    rgb(0, 125, 255, 0.5) 96%,
+    rgb(0, 125, 255, 0.5) 99%,
+    rgb(0, 125, 255, 0.25) 99%) ;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* article 27*/
+.title27:after {content:"Google zahlt fast eine Milliarde Euro an Frankreich";}
+.title27:hover:after{content:"Google pays almost a billion euros to France";}
+/* change banner */
+#banner27{
+width: 100wh;
+height: 10px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 28%,
+    rgb(0, 125, 255) 28%,
+    rgb(0, 125, 255) 66%,
+    rgb(0, 125, 255, 0.75) 66%,
+    rgb(0, 125, 255, 0.75) 96%,
+    rgb(0, 125, 255, 0.5) 75%,
+    rgb(0, 125, 255, 0.5) 75%,
+    rgb(0, 125, 255, 0.25) 75%);
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+/* article 28*/
+.title28:after {content:"Bundeskanzleramt rechnet offenbar mit Rezession";}
+.title28:hover:after{content:"Google pays almost a billion euros to France";}
+/* change banner */
+#banner28{
+width: 100wh;
+height: 11px;
+background-image: linear-gradient(
+    90deg, 
+    black,
+    black 28%,
+    rgb(0, 125, 255) 28%,
+    rgb(0, 125, 255) 75%,
+    rgb(0, 125, 255, 0.75) 75%,
+    rgb(0, 125, 255, 0.75) 79%,
+    rgb(0, 125, 255, 0.5) 79%,
+    rgb(0, 125, 255, 0.5) 93%,
+    rgb(0, 125, 255, 0.25) 93%);
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
